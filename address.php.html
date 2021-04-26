@@ -1,0 +1,850 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>ломбарды  Краснодар</title>
+<meta name="keywords" content="ломбарды Краснодара" />
+<meta name="description" content="ломбарды" />
+<link href="nextweb_themes/krasnodar-cat/style.css" rel="stylesheet" type="text/css" />
+<link href="nextweb_themes/krasnodar-cat/css/smoothness/jquery-ui-1.7.custom.css" rel="stylesheet" type="text/css" />
+<link href="nextweb_themes/krasnodar-cat/css/jquery.fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css" />
+<link href="nextweb_themes/krasnodar-main/css/reveal.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="nextweb_themes/krasnodar-cat/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="nextweb_themes/krasnodar-cat/js/jquery.form.js"></script>
+<script type="text/javascript" src="nextweb_themes/krasnodar-cat/js/jquery.timers-1.1.2.js"></script>
+<script type="text/javascript" src="nextweb_themes/krasnodar-cat/js/jquery-ui.tabs.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="nextweb_themes/krasnodar-cat/js/jquery.easing.1.3.js"></script>
+<script src="//api-maps.yandex.ru/2.0-stable/?load=package.standard,package.geoObjects,package.clusters&lang=ru-RU" type="text/javascript"></script>
+<script language="JavaScript" type="text/JavaScript" src="nextweb_themes/krasnodar-cat/js/jquery.slideviewer.1.1.js"></script>
+<script language="JavaScript" type="text/JavaScript" src="nextweb_themes/krasnodar-cat/js/jquery.fancybox-1.2.1.pack.js"></script>
+<script type="text/JavaScript" src="nextweb_themes/krasnodar-main/js/jquery.blockUI.js"> </script>
+<script type="text/JavaScript" src="nextweb_themes/krasnodar-main/js/jquery.reveal.js"> </script>
+<script type="text/JavaScript" src="nextweb_themes/krasnodar-main/js/jquery.detectmobilebrowser.js"> </script>
+<link rel="stylesheet" href="nextweb_themes/krasnodar-cat//slideviewer.css" type="text/css" media="screen" />
+<script type="text/javascript" src="nextweb_themes/krasnodar-cat/js/init.js"></script>
+<script>var dbg = '';</script>
+</head>
+<body>
+<div id="container">
+
+ <div id="login_slider" style="display:none;">
+  <div id="login_close">&nbsp;</div>
+  <form id="login_form" name="login_form" method="post" action="login.php">
+<h4>Вход на сайт</h4>
+<span>Логин</span><br />
+<input name="login" type="text" /><br />
+<span>Пароль</span><br />
+<input name="password" type="password" /><br />
+  </form>
+<a href="#" onclick='document.login_form.submit();'>Отправить</a>
+ </div><!--login_slider-->
+
+ <div id="reg_slider" style="display:none;">
+  <div id="reg_close">&nbsp;</div>
+  <form id="reg_form" name="reg_form" method="post" action="reg.php">
+<fieldset>
+<legend id="reg_form_caption">Регистрация</legend>
+<input type="text" name="login" id="login" value="Ваш логин" class="input_text" onclick="if (reg_form.login.value=='Ваш логин') reg_form.login.value=''" onBlur="if (reg_form.login.value=='') {reg_form.login.value='Ваш логин'} else {reg_form.login.value!==''}" /><br />
+<div style="height:15px;"><!-- --></div>
+<input type="text" name="mail" id="mail" value="Ваш e-mail" class="input_text" onclick="if (reg_form.mail.value=='Ваш e-mail') reg_form.mail.value=''" onBlur="if (reg_form.mail.value=='') {reg_form.mail.value='Ваш e-mail'} else {reg_form.mail.value!==''}" /><br />
+<div style="height:15px;"><!-- --></div>
+<input type="text" name="passwd" id="passwd" value="Пароль" class="input_text" onclick="if (reg_form.passwd.value=='Пароль') reg_form.passwd.value=''" onBlur="if (reg_form.passwd.value=='') {reg_form.passwd.value='Пароль'} else {reg_form.passwd.value!==''}" /><br />
+<div style="height:15px;"><!-- --></div>
+<input type="text" name="passwd2" id="passwd2" value="Повторите пароль" class="input_text" onclick="if (reg_form.passwd2.value=='Повторите пароль') reg_form.passwd2.value=''" onBlur="if (reg_form.passwd2.value=='') {reg_form.passwd2.value='Повторите пароль'} else {reg_form.passwd2.value!==''}" /> <br />
+<div style="height:15px;"><!-- --></div>
+<input type="checkbox" name="chk" id="chk" /> <label for="chk" class="chk_label">Я принимаю условия <br /><a>пользовательского соглашения</a></label>
+<input type="hidden" value="true" name="fastreg"/>
+<div style="height:5px;"><!-- --></div>
+<input type="submit" class="buttonSubmit" id="submit_button" value="ок">
+</fieldset>
+</form>
+</div>
+
+
+ <div id="why_reg_slider" style="display:none;">
+  <div id="why_reg_close">&nbsp;</div>
+<h4>Что дает регистрация</h4>
+<div class="text">Зарегистрированные пользователи могут в онлайн режиме задавать вопросы оператору
+и получать на них ответы, а также размещать свои объявления частного характера,
+комментировать новости и информационные материалы на сайте. В ближайшем времени спектр
+ возможностей пользователей будет существенно расширен</div><br />
+ </div><!--why_reg_slider-->
+
+
+<div id="first_line" style="margin-left:20px;">
+ <div id="main_logo" style="margin-left:0 !important;">
+  <a href="//open-krasnodar.ru"><img border="0" src="nextweb_themes/krasnodar-cat/images/krasnodar_logo.jpg" alt="Краснодар" /></a><br />
+ </div>
+ <div id="top_search">
+ <div id="top_search_icon" class="show-map"></div>
+ <form action="" method="get">
+ <input id="top_search_input" name="searchtext" type="text" />
+ <input name="act" value="search" type="hidden" />
+ <input id="top_search_button" value="" type="submit" />
+ </form>
+ <div id="top_search_links"><a id="chat_open" href="#">спросить у оператора</a> <a href="address.php?act=show_sails">акции</a></div>
+ </div>
+ <div id="login_pan_top">
+ 
+<div id="login_pan_top_icon"></div>
+  <div id="login_pan_top_text">
+   <span id="login_link"><u>Вход на сайт</u></span><br />
+   <span id="reg_link"><u>Регистрация</u></span><br />
+   <span id="why_reg_link"><u>Что это даст?</u></span><br />
+  </div>
+
+  </div>
+</div>
+
+<div id="first_line_b" style="display:none;">
+ <div id="chat">
+ <div id="chat_icon"></div>
+ <div id="chat_title"><h2>Спросить<br> у оператора</h2></div>
+ <div id="chat_body">
+  <div id="chat_container">
+   <!--.$chat->show_chat().-->
+  </div>
+ </div>
+ <div id="exit_chat">Закрыть диалог<br> с оператором</div>
+ <form id="chat_form" name="chat_form" action="address.php" method="get">
+ <input id="chat_form_input" name="chat_text" type="text" onclick="return false;" onkeypress="if(event.keyCode==13){return false; }" />
+ <input name="chat_act" value="chat_submit" type="hidden" />
+ <input id="chat_login" name="chat_login" value="" type="hidden" />
+ <input id="chat_hash" name="chat_hash" value="542a495b6bb6902b8a38c75f3f5cdc29" type="hidden" />
+ <input id="chat_form_button" name="chat_form_button" type="button" />
+ </form>
+ </div><!--chat-->
+</div><!--first_line_b-->
+
+<div id="ymap_line" style="display:none;position:relative;clear:both;margin:0 20px;padding-top:40px;">
+	
+</div>
+
+<div id="third_line" class=”clearfix” style="float:left;
+    width:960px;
+    left:20px;
+    top:35px;
+    margin-bottom:35px;
+    background:#F34D4D;
+    overflow:hidden;
+    position:relative;
+">
+ <div id="third_line_sub" class=”clearfix” style="float:left;border-right:35px solid white;
+    width:930px;
+    background:#3c9332;
+    position:relative;
+    right:465px;
+">
+  <div id="third_line_sub_sub" class=”clearfix” style="float:left;
+    width:940px;
+    background:#298520;
+    position:relative;
+    right:200px;
+">
+   <div id="main_catalog" style="float:left;border-right:35px solid white;
+    width:250px;
+    position:relative;
+    left:665px;
+">
+
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/2.jpg);"></div>
+   <div class='m_cat_capt'>
+    Еда
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=3">
+            рестораны</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=4">
+            кафе</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=5">
+            супермаркеты </a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=7">
+            готовая кухня</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/8.jpg);"></div>
+   <div class='m_cat_capt'>
+    Одежда
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=9">
+            торговые центры</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=10">
+            магазины одежды</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=11">
+            пошив и ремонт одежды</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=60">
+            аксессуары</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/12.jpg);"></div>
+   <div class='m_cat_capt'>
+    Авто
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=13">
+            автосалоны</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=14">
+            автомагазины</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=15">
+            автосервис</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=16">
+            автоуслуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=639">
+            автозапчасти</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1109">
+            автоаксессуары</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1133">
+            мотосалоны</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/18.jpg);"></div>
+   <div class='m_cat_capt'>
+    Отдых и развлечения 
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=19">
+            клубы</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=20">
+            развлекательные центры</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=21">
+            культурный отдых</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=22">
+            места отдыха</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=23">
+            гостиницы и пансионаты</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=24">
+            товары для отдыха</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=25">
+            активный отдых</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=595">
+            досуг</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/26.jpg);"></div>
+   <div class='m_cat_capt'>
+    Техника
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=27">
+            бытовая техника</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=28">
+            цифровая техника</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=29">
+            спецтехника</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=866">
+            компьютерная техника</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=537">
+            услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=729">
+            бензотехника</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=965">
+            сельхозтехника</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/30.jpg);"></div>
+   <div class='m_cat_capt'>
+    Поездки и туризм
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=31">
+            туризм</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=32">
+            транспорт</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=33">
+            перевозки</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=216">
+            где остановиться?</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=661">
+            тематические туры</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/34.jpg);"></div>
+   <div class='m_cat_capt'>
+    Быт
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=35">
+            мебель</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=36">
+            бытовые товары</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=37">
+            бытовые услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=38">
+            фото</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=39">
+            интерьер</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1279">
+            магазины сантехники</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1424">
+            бытовое оборудование</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat'  style='background:#4ac73e;'>
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/40.jpg);"></div>
+   <div class='m_cat_capt'>
+    Бизнес и финансы
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=41">
+            бизнес услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=42">
+            финансы</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=43">
+            рекламные услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=44">
+            юридические услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=802">
+            страхование</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=448">
+            бизнес товары</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=902">
+            кредиты</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=924">
+            бухгалтерские услуги</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/46.jpg);"></div>
+   <div class='m_cat_capt'>
+    Уход за собой
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=47">
+            красота</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=48">
+            фитнес</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=741">
+            курсы красоты</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=818">
+            косметика</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=829">
+            косметология</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=720">
+            танцы</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/49.jpg);"></div>
+   <div class='m_cat_capt'>
+    Спорт
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=50">
+            спортивные магазины</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=51">
+            занятия спортом</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1028">
+            спортивные секции</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=880">
+            услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=948">
+            боевые искусства</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/52.jpg);"></div>
+   <div class='m_cat_capt'>
+    Торжества
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=53">
+            свадьбы</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=54">
+            подарки</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1343">
+            пиротехника</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=674">
+            праздники</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=826">
+            цветы</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/55.jpg);"></div>
+   <div class='m_cat_capt'>
+    Здоровье
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=56">
+            медицина</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=57">
+            аптеки</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=58">
+            стоматологии</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=59">
+            питание</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=407">
+            санатории и пансионаты</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=473">
+            оздоровление</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=507">
+            ортопедические товары</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=577">
+            консультации</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=782">
+            реабилитация</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=841">
+            зрение</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=895">
+            восточная медицина</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/61.jpg);"></div>
+   <div class='m_cat_capt'>
+    Недвижимость
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=62">
+            риэлторы</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=63">
+            жкх</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=64">
+            услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1051">
+            продажа квартир</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=937">
+            недвижимость за рубежом</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1366">
+            аренда недвижимости</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/65.jpg);"></div>
+   <div class='m_cat_capt'>
+    Строительство
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=66">
+            строительные компании</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=67">
+            строительные материалы</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=68">
+            дизайн и проектирование</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=69">
+            окна и двери</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=70">
+            инженерные сети</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=516">
+            строительные и ремонтные услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=890">
+            отделочные материалы</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=892">
+            геодезические услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=997">
+            изделия из металла</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1040">
+            аренда строительной техники</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1267">
+            бурение</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/71.jpg);"></div>
+   <div class='m_cat_capt'>
+    СМИ
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=72">
+            тв и радио</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=73">
+            периодика</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1364">
+            новостные ресурсы</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/74.jpg);"></div>
+   <div class='m_cat_capt'>
+    Коммуникации
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=75">
+            связь</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=76">
+            почта</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/78.jpg);"></div>
+   <div class='m_cat_capt'>
+    Дети
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=79">
+            детское здоровье</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=80">
+            детские магазины</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=81">
+            образование</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=82">
+            детский досуг</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1107">
+            игрушки </a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1308">
+            детские праздники</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/83.jpg);"></div>
+   <div class='m_cat_capt'>
+    Образование и культура
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=84">
+            образование</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=85">
+            культура</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=648">
+            книги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=732">
+            курсы</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=749">
+            услуги</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=806">
+            эзотерика</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/86.jpg);"></div>
+   <div class='m_cat_capt'>
+    Производство
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=87">
+            промышленное</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=88">
+            сельско-хозяйственное</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=89">
+            продуктов питания</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=90">
+            напитки</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=987">
+            строительное производство</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1001">
+            металлические изделия</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1047">
+            оборудование </a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/91.jpg);"></div>
+   <div class='m_cat_capt'>
+    Безопасность
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=92">
+            охрана объектов</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=93">
+            системы безопасности</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=972">
+            охранные предприятия</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1391">
+            пожарная безопасность</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/94.jpg);"></div>
+   <div class='m_cat_capt'>
+    Работа
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=95">
+            службы занятости</a></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/96.jpg);"></div>
+   <div class='m_cat_capt'>
+    Государство
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=97">
+            органы власти</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=98">
+            госучреждения</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=99">
+            госпредприятия</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=100">
+            политика</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/426.jpg);"></div>
+   <div class='m_cat_capt'>
+    Оптовая торговля
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=427">
+            продукты</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=428">
+            мебель опт</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=429">
+            бытовые товары</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=430">
+            техника</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=641">
+            запчасти</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=700">
+            детские товары</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=881">
+            одежда оптом</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=992">
+            строительные материалы оптом</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1351">
+            товары для праздника</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1373">
+            сельхоз товары оптом</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/439.jpg);"></div>
+   <div class='m_cat_capt'>
+    Животный мир
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=440">
+            продажа и уход</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=441">
+            здоровье животных</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=707">
+            аквариумы</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/1144.jpg);"></div>
+   <div class='m_cat_capt'>
+    Сельское хозяйство
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1161">
+            сад и огород</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1162">
+            животноводство</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/1145.jpg);"></div>
+   <div class='m_cat_capt'>
+    Инструменты и оборудование
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1303">
+            швейное оборудование</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1195">
+            альтернативная энергетика</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1221">
+            промышленное оборудование</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1252">
+            крепеж</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1255">
+            инструменты</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1286">
+            торговое оборудование</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/1146.jpg);"></div>
+   <div class='m_cat_capt'>
+    Курорты Края
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1167">
+            анапа</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1168">
+            адлер</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1169">
+            архипо-осиповка</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1170">
+            геленджик</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1171">
+            горячий ключ</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1172">
+            дивноморск</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1173">
+            красная поляна</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1174">
+            лазаревское</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1175">
+            лермонтово</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1176">
+            лоо</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1177">
+            небуг</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1178">
+            новороссийск</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1179">
+            сочи</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1180">
+            тамань</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1181">
+            туапсе</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1360">
+            адыгея</a><span style="color:#fff;">, </span></span></div></div>
+  <div class='m_cat' >
+     <div style="float:left;position:relative;width:50px;height:50px;
+     left:20px;margin-right:10px;background-image:url(images/icons/1147.jpg);"></div>
+   <div class='m_cat_capt'>
+    Творчество
+   </div>
+<div class='sub_cat_2'><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1182">
+            музыка</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1183">
+            изобразительное искусство</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1184">
+            рукоделие</a><span style="color:#fff;">, </span></span><span><a href="http://open-krasnodar.ru/address.php?act=show_cat&cat=1330">
+            хобби</a><span style="color:#fff;">, </span></span></div></div>
+    <!--main_catalog-->
+   </div>
+   <div id="sub_catalog" style="float:left;border:0px solid;
+    width:180px;
+    position:relative;
+    left:665px;
+">
+
+
+
+<div id='subcat_head'>финансы</div><div class='subcat_items'><a href='address.php?act=show_cat&cat=42&subcat=262'>банки</a></div><div class='subcat_items'><a href='address.php?act=show_cat&cat=42&subcat=263'>инвестиции</a></div><div class='subcat_items'><a href='address.php?act=show_cat&cat=42&subcat=793'>лизинг</a></div><a name='current'><!-- --></a><div class='subcat_items_active'>ломбарды</div><div class='arrow_right'></div><div class='subcat_items'><a href='address.php?act=show_cat&cat=42&subcat=266'>обмен валюты</a></div>
+    <!-- sub_catalog -->   
+	
+ 
+   </div>
+
+   <div id="catalog_results" style="float:left;border:0px solid;
+    width:460px;
+    position:relative;
+    left:700px;
+">
+
+
+  
+   <div id="sails_box0">
+    
+        <style>
+        #third_line{background-color:#f5f3f4 !important;}
+        .wrap{font-family:Arial, Helvetica, sans-serif;padding-left:30px;padding-top:20px;padding-right:30px;}
+        .wrap h2{color:#6a6a6a;margin-bottom:10px;font-size:22px;}
+        .wrap ul.items{padding:0;padding-left:6px;margin:0;list-style:none;}
+        .wrap ul.items li{padding:0;margin:0;list-style:none;}
+        .wrap ul.items li h3 a{color:#3c9332;font-size:16px;}
+        .wrap p.description{margin:0;padding:0;margin-bottom:13px;color:#6d6d6d;font-size:11px;}
+        </style>
+        <div class="wrap"><h2>ломбарды</h2><ul class='items'><li>
+                <h3><a href='address.php?act=show_cat&cat=42&subcat=265&item_id=493'>Авангард-Трейд</a></h3> 
+                <p class='description'></p>
+            </li><li>
+                <h3><a href='address.php?act=show_cat&cat=42&subcat=265&item_id=494'>Ваш ломбард</a></h3> 
+                <p class='description'></p>
+            </li><li>
+                <h3><a href='address.php?act=show_cat&cat=42&subcat=265&item_id=495'>Доходное место</a></h3> 
+                <p class='description'></p>
+            </li><li>
+                <h3><a href='address.php?act=show_cat&cat=42&subcat=265&item_id=1585'>Плюс Финанс</a></h3> 
+                <p class='description'></p>
+            </li><li>
+                <h3><a href='address.php?act=show_cat&cat=42&subcat=265&item_id=2151'>Плюс Финанс</a></h3> 
+                <p class='description'>деньги под залог</p>
+            </li></ul></div>
+  </div> <!--sails_box -->
+
+  
+<div id="partnery_block1"><hr>
+<div style="min-height:35px;>
+	<span style="font-size: 14px; color: #536f50;">Реклама от партнеров</span><br>
+	
+</div>
+<hr>
+</div>
+  
+  
+   </div>
+  </div> <!--third_line_sub_sub-->
+ </div> <!--third_line_sub-->
+</div> <!--third_line-->
+
+<div class="space" style="clear:both;"></div>
+
+<div id="second_line" style="margin-left:20px;">
+ <div id="about_project" style="margin-left:0 !important;">
+  <div id="about_project_icon"></div>
+  <div id="about_project_text">
+   <h2>О проекте</h2>
+     <div>
+    Всего компаний: 2438<br />
+    Сейчас акций: <a href="address.php?act=show_sails">1635</a><br /><br />
+    Просмотрено сегодня:<br /> 5123 страниц<br />
+    <a href="index.php?11">Детальная статистика</a> <br />
+    </div>
+  </div>
+ </div>
+
+ <div id="main_baner" style="margin-top: 35px;width:405px;">
+  <!-- <a href="backmess.php"><img src="nextweb_themes/krasnodar-cat/images/main_ban.jpg" border="0" /></a><br /> -->
+ 
+<style>
+/*#billboard_container{font-size:14px;text-align:center;margin-left:auto; margin-right:auto;padding-left:20px;padding-right:20px;height:150px;overflow:hidden;background-color:#aca1a1;}*/
+.ui-widget-header{border:0px !important;background: url('') !important;}
+.ui-widget-content{border:0px !important;background: url('') !important;}
+.ui-state-active{background: #EACBC1 url('') !important;color:#1C94C4 !important;}
+.ui-state-hover{border:#0px !important; background:#f6f6f6 url('') !important; color:#1c94c4 !important;}
+.ui-helper-reset{line-height:0 !important;}
+.ui-widget{font-size:1em !important;}
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited{border:0px none !important; color:#1c94c4 !important}
+#billboard_container{height:150px;overflow:hidden;background-color:#aca1a1 !important;}
+#billboard_container IMG{border:1px solid #fff}
+
+
+/*EVENTS*/
+#billboard_events_container{color:#fff;	font-family:Arial, Helvetica, sans-serif;}/*padding-top:10px;}*/
+
+#billboard_events_box{/*float:left;width:245px;padding-left:7px;*/text-align:left;}
+.billboard_events_date{float:left;font-size:12px;padding-right:10px;}
+.billboard_events_caption a{font-size:13px;color:#ffffff;}
+/*.billboard_events_caption a{font-size:18px;color:#ffffff;}*/
+.billboard_events_text{font-size:14px;}
+.billboard_news_all{position:relative;text-align:right;bottom:2px;}
+.billboard_news_all a{color:#fff;font-size:14px;}
+/**/
+
+/*BILLBOARD*/
+#billboard_submenu2{font-size:14px;color:#fff;background-color:#d1caca;width:350px;text-align:left;padding-left:10px;padding-top:2px;padding-bottom:2px;}
+#billboard_box{padding-top:10px;}
+#billboard_data{float:left; width:265px;}
+.billboard_submenu2_element{/*margin:0 4px;*/}
+.billboard_submenu2_active{/*margin:0 4px;*/}
+.mov_ul {list-style-type:none;text-align:left;font-size:12pt;font-family: Verdana,Arial,sans-serif; padding:0;margin:0;padding-left:10px;}
+.mov_li {font-size:12px;color:#ffffff;}
+.billboard_submenu2_element{ border-bottom:.1em dashed #fff;  cursor:pointer;}
+.billboard_submenu2_active{border-bottom: 0 !important;}
+.billboard_submenu2_element:hover{color:grey;}
+/**/
+
+/*WEATHER*/
+#billboard_weather_container{position:relative;padding-top:10px;	color:#fff;	font-family:Arial, Helvetica, sans-serif;}
+#billboard_weather_container IMG{float:left;padding:0;}
+#billboard_weather_box{float:left;padding-left:10px; text-align:left;}
+#billboard_weather_header{	font-size:20px;}
+#billboard_weather_grads{	font-size:18px; padding:5px 0;}
+#billboard_weather_conditions{	font-size:14px;}
+#weather_from{position:absolute;right:4px;bottom:2px;font-size:10px;}
+#weather_from a{color:#ffffff}
+/**/
+</style>
+        <script type='text/javascript'>
+        jQuery(function() {
+          jQuery('#billboard_menu').tabs({ selected: 2, fx: { opacity: 'toggle' } });
+        });
+        </script>
+
+<div id='billboard_container'>
+ <div id='billboard_menu'>
+  <ul>
+  <li style='color:white;width: 30%;'><a href='#billboard_subcontent-6'><div class='billboard_menu_elements'>Лето</div></a></li>
+  <!--<li style='background:none;background-color:#FF997A; color:white;'><a href='#billboard_subcontent-5'><div class='billboard_menu_elements' style='color:white'>Игра</div></a></li>-->
+  <!--<li><a href='#billboard_subcontent-3'><div class='billboard_menu_elements'>Погода</div></a></li>-->
+   <li style='width: 30%;'><a href='#billboard_subcontent-1'><div class='billboard_menu_elements' id='billboard_menu_start'>Новости</div></a></li>
+   <!--<li><a href='#billboard_subcontent-2'><div class='billboard_menu_elements'>Афиша</div></a></li>-->
+   <li style='width: 30%;'><a href='#billboard_subcontent-4'><div class='billboard_menu_elements'>Обзоры</div></a></li>
+   
+  </ul>
+
+
+ <div id='billboard_subcontent-1' style='display:none;'>
+   <div id='billboard_events_container'>
+  <div id='billboard_events_box'>
+  <div class='billboard_events_date'>08.09.14</div>
+  <div class='billboard_events_caption'><a href='news.php?nc=one&id=1789'>О парковках Краснодара теперь можно узнать на специальном сайте</a></div>
+  <div class='billboard_events_date'>29.08.14</div>
+  <div class='billboard_events_caption'><a href='news.php?nc=one&id=1788'>В Краснодарском крае станет больше сельскохозяйственных ярмарок</a></div>
+  <div class='billboard_events_date'>28.08.14</div>
+  <div class='billboard_events_caption'><a href='news.php?nc=one&id=1787'>Скульптуру Мальчик на слоне собираются отлить в бронзе</a></div>
+  </div>
+  <div style='clear:both;'></div>
+  <div class='billboard_news_all'><a href='news.php?cat=1'>все новости</a></div>
+ </div>
+
+ </div>
+
+ <div id='billboard_subcontent-2' style='display:none;'>
+  <div id='billboard_submenu2'>
+   <span id='b_board_1' class='billboard_submenu2_element billboard_submenu2_active'>На Красной площади</span>
+   <span id='b_board_2' class='billboard_submenu2_element'>Европа</span>
+   <span id='b_board_3' class='billboard_submenu2_element'>Квартал</span>
+   <span id='b_board_4' class='billboard_submenu2_element'>Семь звезд</span>
+   <span id='b_board_5' class='billboard_submenu2_element'>Киномакс</span>
+  </div>
+ <div id='billboard_box'>
+  
+  <div id='billboard_data'><ul class='mov_ul'></ul></div>
+  <div style='clear:both;'><!-- clear --></div>
+ </div> <!-- billboard_box -->
+</div>
+
+<!-- <div id='billboard_subcontent-3'>
+  <div>Сервис временно недоступен</div>
+ </div>-->
+
+ <div id='billboard_subcontent-4'>
+  <style>
+    /*.mainpage_caption a{color:#fff;font-size:11px;font-family:Arial, Helvetica, sans-serif;}
+    .mainpage_date{color:#fff;font-size:10px;font-family:Arial, Helvetica, sans-serif;}*/
+    </style>
+ <div id='billboard_events_container'>
+  <img src='news_photos/1267.jpg' width='100' height='90' style='float:left;margin-right:7px;' />
+  <div id='billboard_events_box'>
+   <div class='billboard_events_caption'><a href='news.php?nc=one&id=1267'>Собер-Баш</a></div>
+   <div class='billboard_events_text'>Добро пожаловать в горнолыжный курорт Собер-Баш!</div>
+  </div>
+  <div style='clear:both;'><!-- --></div>
+ </div>
+
+ </div>
+
+  <div id='billboard_subcontent-5' style='display:none;'>
+   <div id='billboard_events_container'>
+  <img src='images/game_cat.jpg' width='100' height='90' style='float:left;margin-right:7px;' />
+  <div id='billboard_events_box'>
+  <!--<div class='billboard_events_date'>31.08.10</div>-->
+  <div class='billboard_events_caption'><a href='news.php?nc=one&id=435'>2000  рублей  в стоматологию!</a></div>
+  <!--<div class='billboard_events_date'>31.08.10</div>-->
+  <div class='billboard_events_caption'><a href='news.php?nc=one&id=434'>Йога - 1000 руб халява!</a></div>
+  <!--<div class='billboard_events_date'>31.08.10</div>-->
+  <div class='billboard_events_caption'><a href='news.php?nc=one&id=433'>1000 рублей на МЕБЕЛЬ!</a></div>
+  </div>
+  <div style='clear:both;'></div>
+  <div class='billboard_news_all'><a href='news.php?cat=6'>победители</a> <a href='news.php?cat=4'>все игры</a></div>
+ </div>
+
+ </div>
+ 
+  <div id='billboard_subcontent-6' style='display:block;'>
+   <div id='billboard_events_container'>
+    <img src='images/leto.png' width='108' height='96' style='float:left;margin-right:7px;' />
+    <div id='billboard_events_box'>
+	  <div class='billboard_events_caption' style='margin-bottom:4px'><a href='index.php?25#Где отдохнуть в Краснодаре на праздник?'>летние туры и отдых</a></div>
+      <div class='billboard_events_caption' style='margin-bottom:4px'><a href='index.php?25#Где отметить праздник в Краснодаре'>где отметить летние праздники?</a></div>
+      <div class='billboard_events_caption' style='margin-bottom:4px'><a href='index.php?25#Что подарить на праздник?'>что подарить на праздник?</a></div>
+      <div class='billboard_events_caption' style='margin-bottom:4px'><a href='index.php?25#Банкеты на праздники и события'>банкеты на выпускные и праздники</a></div>
+  	  <div class='billboard_events_caption' style='margin-bottom:4px'><a href='index.php?25#Где отдохнуть в Краснодаре на праздник?'>активный отдых летом</a></div>
+
+  <div class='billboard_events_caption' style='margin-bottom:4px'></div>
+   </div>
+    <div style='clear:both;'><!-- --></div>
+   </div>
+ </div>
+ 
+</div> <!-- billboard_menu -->
+
+</div><!-- billboard_container -->
+
+ 
+ </div>
+
+ <div id="stats_pan">
+  <div id="stats_pan_icon"></div>
+  <div id="stats_pan_text">
+   <h2>Статистика</h2>
+   Всего компаний: <u>2438</u><br />
+   Сейчас акций: <u>1635</u><br />
+   Посетило за неделю:<br />
+   0 человек<br /><br />
+   <u>Детальная статистика</u><br />
+  </div>
+ </div>
+</div>
+
+<div id="dinamic_block" style="margin-left:20px;display:none;">
+ <div id="dinamic" style="margin-left:0 !important;">
+
+ </div>
+</div>
+
+<div id="fifth_line" style="margin-left:20px;">
+ <div id="footer" style="margin-left:0 !important;">
+  <div id="footer_icon"></div>
+   <div id="footer_text_links1">
+ 
+
+      <a href="index.php?10">О проекте<br /></a>
+	  <a href="index.php?11">Статистика<br /></a>
+	  <a href="index.php?12">Партнерам<br /></a>
+	  <a href="index.php?13">Контакты<br /></a>
+	  <a href="index.php?14">Реклама<br /></a>
+   </div>
+    <div id="footer_text_banner">
+
+Ломбард - специальная компания, основными видами деятельности которой являются предоставление краткосрочных займов под залог движимого имущества граждан и хранение вещей. В этом разделе Вашему вниманию представлены ломбарды Краснодара. Если Вам необходим займ, Вы можете оставить вещь под залог и получить за это наличные, но через определенное время.
+
+</div>
+   <div id="footer_text_links2" style="display:block;">
+             
+	  <!--<a href="#">Поиск<br /></a>
+	  <a href="#">Каталог<br /></a>
+	  <a href="#">Акции<br /></a>
+	  <a href="#">Полезная<br /></a>
+	  <a href="#">информация<br /></a>-->
+    </div>
+  </div>
+ </div>
+
+<div id="sixth_line" style="margin-left:20px;">
+ <div id="sub_footer" style="margin-left:0 !important;">
+  <div id="left_box">
+<!--LiveInternet counter--><script type="text/javascript"><!-- 
+document.write("<a href='http://www.liveinternet.ru/click' "+ 
+"target=_blank><img src='http://counter.yadro.ru/hit?t44.2;r"+ 
+escape(document.referrer)+((typeof(screen)=="undefined")?"": 
+";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth? 
+screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+ 
+";"+Math.random()+ 
+"' alt='' title='LiveInternet' "+ 
+"border=0 width=31 height=31><\/a>")//--></script><!--/LiveInternet-->
+
+  </div>
+  <div id="right_box">
+   <div id="studia">Сайт разработан в студии 15rus <a href="//nextweb.ru/">NextWeb</a></div>
+   <div id="expert_poisk">Группа компаний "<a href="index.php?5">Эксперт Поиск</a>"</div>
+  </div>
+ </div>
+</div>
+
+</div>
+
+</div> <!--container-->
+
+<!-- Yandex.Metrika counter -->
+<div style="display:none;"><script type="text/javascript">
+(function(w, c) {
+    (w[c] = w[c] || []).push(function() {
+        try {
+            w.yaCounter4532332 = new Ya.Metrika({id:4532332, enableAll: true});
+        }
+        catch(e) { }
+    });
+})(window, 'yandex_metrika_callbacks');
+</script></div>
+<script src="//mc.yandex.ru/metrika/watch_visor.js" type="text/javascript" defer="defer"></script>
+<noscript><div><img src="//mc.yandex.ru/watch/4532332" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</body>
+</html>
+<script>console.log('Страница сгенерирована за 0.059942007064819сек.')</script>
